@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/button_categories"
+        android:title="Categories"
+        android:icon="@drawable/bookmark_box"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/entries"
+        android:title="Entries"
+        android:icon="@drawable/list_box"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/report"
+        android:title="Report"
+        android:icon="@drawable/chart_bar"
+        app:showAsAction="always"/>
+</menu>

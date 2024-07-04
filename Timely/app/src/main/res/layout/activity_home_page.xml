@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backdrop_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ImageView
+        android:id="@+id/top_home_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/top_home_image" />
+
+    <Button
+        android:id="@+id/timer_start"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="121dp"
+        android:layout_toStartOf="@+id/timer_stop"
+        android:minWidth="100dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/timer_stop"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="120dp"
+        android:minWidth="100dp"
+        android:text="Stop" />
+
+    <Spinner
+        android:id="@+id/category_dropdown_menu"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timer_start"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="74dp"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:prompt="@string/category"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/timer_display"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="135dp"
+        android:text="00:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:elevation="10dp" />
+
+    <ImageButton
+        android:id="@+id/uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timer_stop"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="66dp"
+        android:src="@drawable/baseline_image_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="582dp"
+        app:srcCompat="@drawable/top_home" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="439dp"
+        app:srcCompat="@drawable/bg_time" />
+
+</RelativeLayout>
